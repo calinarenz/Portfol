@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand text-white" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <section id="home" class="section fade-in">
+            <div class="container text-center">
+                <h1>Hi, I'm Gly Benigno</h1>
+                <h1>BSIT Student</h1>
+                <p>eExplore my projects and learn more about m.</p>
+            </div>
+        </section>
+
+        <section id="about" class="section fade-in">
+            <div class="container">
+                <h2>ABOUT</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm 19 years old and a third year <span class="highlight">BSIT student</span>. Finding out that websites are made with <span class="highlight">HTML</span> and <span class="highlight">CSS</span> got me excited about web development. That made me really interested in computers and programming.
+                        </p>
+                        <p>
+                            Right now, I'm learning <span class="highlight">ReactJS</span> and getting better at front-end skills with <span class="highlight">TailwindCSS</span> and <span class="highlight">NextJS</span>. Before my second year starts, I want to get better at <span class="highlight">C++</span> and be ready for my <span class="highlight">Database</span> subject. Even though I mostly focus on front-end development, I also want to try back-end development someday.
+                        </p>
+                        <h3>FEATURED SKILLS</h3>
+                        <div id="skills-container"></div>
+                        <h3>EDUCATION</h3>
+                        <div id="education-container" class="education-timeline"></div>
+                    </div>
+                    <div class="about-image">
+                        <img src="profile.jpg" alt="Profile" class="profile-pic">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="projects" class="section fade-in d-none">
+            <div class="container">
+                <h2>Works</h2>
+                <div class="row">
+                    <!-- Project 1 -->
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="WebWise">
+                            <div class="card-body">
+                                <h5 class="card-title">WebWise</h5>
+                                <p class="card-text">An educational website to start learning web development.</p>
+                                <a href="https://github.com/yourusername/webwise" class="btn btn-primary" target="_blank">GitHub Link</a>
+                                <a href="#" class="btn btn-secondary" target="_blank">Learn More</a>
+                                <span class="badge badge-info mt-2">Educational Website</span>
+                                <span class="badge badge-info mt-2">Static Web</span>
+                                <span class="badge badge-info mt-2">Group Project</span>
+                                <span class="badge badge-info mt-2">Multi-Page</span>
+                                <span class="badge badge-info mt-2">Mobile Responsive</span>
+                                <span class="badge badge-info mt-2">Dark Theme</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for other projects -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section fade-in d-none">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+   
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

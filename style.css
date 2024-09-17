@@ -1,0 +1,205 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar {
+    background-color: #393939; 
+    z-index: 1000;
+  
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+
+}
+
+
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+
+.section {
+    padding: 60px 20px;
+    opacity: 0; 
+    transition: opacity 2s ease-in-out;
+    display: none; /* Initially hide sections */
+}
+
+.section.fade-in {
+    opacity: 1; 
+    display: block; /* Ensure sections are displayed when fading in */
+}
+
+.section.d-none {
+    display: none; /* Ensure sections are hidden */
+}
+
+
+
+#about {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #fdfdfd;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.about-image {
+    margin-bottom: 2rem;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.highlight {
+    color: #000000;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.skill-badge {
+    background-color: #333;
+    color: #fafafa;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.education-timeline {
+    position: relative;
+    padding-left: 1.2rem;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ffffff;
+}
+
+.education-item {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.education-item:last-child {
+    padding-bottom: 0;
+}
+
+.education-dot {
+    position: absolute;
+    left: -1.5rem;
+    top: 0.25rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #000000;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.education-content {
+    padding-left: 0.5rem;
+}
+
+.education-year {
+    color: #000000;
+    margin-bottom: 0.25rem;
+}
+
+.education-title {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.education-description {
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
